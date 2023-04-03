@@ -1,10 +1,35 @@
-Case Study 2: How Can a Wellness Technology Company Play it Smart
-# %% [About the Company Bellabeat]
-# %% [Communicate with Others]
-# %% [Organize and protect data]
-# %% [Generate, transform, and preserve data integrity]
-# %% [Generate forecasts and suggestions using visuals and narrative]
-# %% [Create something new while applying insights]
+# Case Study 2 - How Can a Wellness Technology Company Play it Smart
+
+* [About the Company Bellabeat]
+    - [Products of the company]
+* [Communicate with Others]
+    - [Business Task]
+    - [Business Objective]
+    - [Business Deliverables]
+    - [Stakeholders of the Project]
+* [Organize and protect data]
+    - [Data Source]
+    - [CC0: Public Domain]
+    - [Data Description]
+    - [Data Limitations]
+* [Generate, transform, and preserve data integrity]
+    - [Upload CSV Files Into R]
+    - [Importing packages]
+    - [Loading the .CSV Files]
+    - [Clean data]
+    - [Analysis on datasets based on the rows retrieved]
+    - [Renaming]
+    - [Time to merge Datasets]
+    - [Duplicacy of the data]
+* [Generate forecasts and suggestions using visuals and narrative]
+    -[Summarization the data]
+    -[Few more investigations into user behaviors]
+    -[Interpreting Statistical findings]
+* [Create something new while applying insights]
+    - [Insights gained during this Analysis]
+    - [An overview of the results is as follows]
+    - [Recommendation for Bellabeat Marketing Team]
+
 ---
 title: 'Case Study 2: How Can a Wellness Technology Company Play it Smart'
 author: 'Reshu Narang'
@@ -61,7 +86,7 @@ in 2023, up from 23.3% YoY growth in 2021.[SmartDevices Evolution]
 ### Business Deliverables:
 Find the key differences between Fitbit users and Bellabeat users and how digital media and other factors could influence them.
 
-### Stakeholders:
+### Stakeholders of the Project:
 Urška Sršen: Bellabeat’s co founder and Chief Creative Officer 
 Sando Mur: Mathematician and Bellabeat co founder; key member of the Bellabeat executive team 
 Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s 
@@ -112,19 +137,19 @@ the necessary queries.
 ### Upload CSV Files Into R
 I uploaded the CSV files to my project from the relevant data sources mentioned above.
 
-## Importing packages
+### Importing packages
 
 
 ```{r}
-library(tidyverse) # metapackage of all tidyverse packages
-library(lubridate) # date
+library(tidyverse) 
+library(lubridate) 
 library(janitor)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
 ```
 
-### Loading the .CSV Files from the Kaggle Dataset provided by the Case Study
+### Loading the .CSV Files
 Here I am considering three CSV files dailyActivity_merged.csv, sleepDay_merged.csv, weightLogInfo.csv instead of loading all 18 files in R. 
 The reason why I considered loading and analyzing these 3 files were that the dailyActivity_merged.csv contains a lot of same entities as the rest 
 of the tables e.g. calories, intensity, distance and steps data recorded on a daily basis. So to avoid the duplicacy of data I have considered only 3 
@@ -145,7 +170,7 @@ weightLogInfo <- read_csv("../input/weightloginfo-merged/weightLogInfo_merged.cs
 (weightLogInfo)
 ```
 
-### Clean the data so I can work effectively on it, also consider if I have enough data in all the 3 datasets to work on
+### Clean data
 
 ```{r For the result I got 33 rows}
 count(distinct(dailyActivity, Id))
@@ -165,7 +190,7 @@ count(distinct(weightLogInfo, Id))
 
 Here I retrieved only 8 rows, which is quite less to consider for our analysis
 
-### Now I am left to analyse only dailyActivity_merged.csv, sleepDay_merged.csv datasets based on the rows retrieved. 
+### Analysis on datasets based on the rows retrieved
 Let us check the data structure of dailyActivity and sleepDay to figure out if the datasets are cleaned and consistent.
 
 ```{r}
@@ -208,7 +233,7 @@ dailyActivity <- rename(dailyActivity, date = ActivityDate)
 
 ```
 
-### Time to merge dailyActivity and sleepDay Datasets and using Id and date as a common key.
+### Time to merge Datasets, using Id and date as a common key
 
 ```{r}
 merged_daily_activity <- merge(x = dailyActivity, y = sleepDay, by = c("Id", "date"), all.x = TRUE )
@@ -228,7 +253,7 @@ merged_daily_activity <- transform(merged_daily_activity, Weekday = weekdays(dat
 glimpse(merged_daily_activity)
 ```
 
-### Lets check for the duplicacy of the data
+### Duplicacy of the data
 
 ```{r}
 sum(duplicated(merged_daily_activity))
@@ -246,11 +271,9 @@ Verifying the data again to have a clean data
 sum(duplicated(merged_daily_activity))
 ```
 
-### Finally got a clean result. Moving onto the Analyze and Share Phase
-
 ## Generate forecasts and suggestions using visuals and narrative
 
-### Let's summarize the data
+### Summarization the data
 
 ```{r}
 merged_daily_activity %>% 
@@ -281,7 +304,7 @@ The Output received is:
 - TotalTimeInBed(Average) : 458.50 minutes.  
 - Calories(Average) : 2389.  
 
-### Planned a few more investigations into user behaviors.   
+### Few more investigations into user behaviors
 
 #### Lets analyze the data based on the criteria's found after merging the tables:         
 Calories Vs Very Active Minutes.   
