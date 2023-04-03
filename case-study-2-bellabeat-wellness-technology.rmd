@@ -1,7 +1,6 @@
-# %% [code]
 # TABLE OF CONTENTS
 
-* [About the Company Bellabeat](## About the Company Bellabeat)
+* [About the Company Bellabeat](#About the Company Bellabeat)
     * [Products of the company](#Products of the company)
 * [Communicate with Others](#Communicate with Others)
     * [Business Task](#Business Task)
