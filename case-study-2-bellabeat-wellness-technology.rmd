@@ -1,6 +1,10 @@
-# %% [code]
-# %% [code]
-# %% [code]
+# %% [Case Study 2: How Can a Wellness Technology Company Play it Smart]
+# %% [About the Company Bellabeat]
+# %% [Communicate with Others]
+# %% [Organize and protect data]
+# %% [Generate, transform, and preserve data integrity]
+# %% [Generate forecasts and suggestions using visuals and narrative]
+# %% [Create something new while applying insights]
 ---
 title: 'Case Study 2: How Can a Wellness Technology Company Play it Smart'
 author: 'Reshu Narang'
@@ -38,7 +42,7 @@ The Spring bottle is integrated with the Bellabeat app to monitor hydration leve
 fully customized advice on diet, fitness, sleep, health and beauty, and mindfulness, depending on their lifestyle and objectives, 24 hours a day, 
 seven days a week.
 
-## ASK
+## Communicate with Others
 Specifically, I will be looking at the data from Bellabeat Leaf and Time products to learn more about how people are employing smart watches.
 
 ### Business Task:
@@ -63,7 +67,7 @@ Sando Mur: Mathematician and Bellabeat co founder; key member of the Bellabeat e
 Bellabeat marketing analytics team: A team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s 
 marketing strategy.
 
-## PREPARE
+## Organize and protect data
 
 ### Data Source:
 The data is located in a [kaggle dataset](https://www.kaggle.com/datasets/arashnic/fitbit)
@@ -99,7 +103,7 @@ The participants remain anonymous. That being said, I do not know the age or gen
 
 ***Note:*** Overall, this is not a quality dataset to be used for actual business recommendations.
 
-## PROCESS
+## Generate, transform, and preserve data integrity
 Make data more understandable and readable by cleaning and formatting it. At this point, the data has been organized by adding columns, extracting 
 relevant information, and eliminating any errors or duplication. To keep things straightforward, I have compiled everything into R. By transforming 
 the CSV files into tables and then linking those tables together using common properties, I was able to simply handle the full set of files and run 
@@ -244,7 +248,7 @@ sum(duplicated(merged_daily_activity))
 
 ### Finally got a clean result. Moving onto the Analyze and Share Phase
 
-## ANALYZE AND SHARE
+## Generate forecasts and suggestions using visuals and narrative
 
 ### Let's summarize the data
 
@@ -376,7 +380,7 @@ plot_grid(p1, p2, p3, labels = c("Total Distance Vs. Calories", "Total Steps Vs.
          
 ```
 
-## ACT
+## Create something new while applying insights
 
 ### Insights gained during this Analysis:
 Clearly communicate to the stakeholders of Bellabeat the insights that I have gained throughout the course of this data analysis project in such a way 
