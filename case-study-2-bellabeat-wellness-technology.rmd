@@ -1,4 +1,4 @@
-# %% [Case Study 2: How Can a Wellness Technology Company Play it Smart]
+Case Study 2: How Can a Wellness Technology Company Play it Smart
 # %% [About the Company Bellabeat]
 # %% [Communicate with Others]
 # %% [Organize and protect data]
