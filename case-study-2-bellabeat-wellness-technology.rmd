@@ -1,7 +1,14 @@
 ## TABLE OF CONTENTS
 
-## About the Company Bellabeat <a class="anchor"  id="About the Company Bellabeat"></a>
-    ## About the Company Bellabeat. Products of the company <a class="anchor"  id="subsection1"></a>
+* [About the Company Bellabeat](#About the Company Bellabeat)
+    * [Products of the company](#Products of the company)
+
+* [Chapter 1](#chapter1)
+    * [Section 1.1](#section_1_1)
+* [Chapter 2](sSection_1_2)
+    * [Section 2.1](#section_2_1)
+* [Chapter 3](#chapter2)
+    * [Section 3.1](#section_3_1)
 * Communicate with Others
     - Business Task
     - Business Objective
