@@ -1,7 +1,7 @@
-# TABLE OF CONTENTS
+## TABLE OF CONTENTS
 
-* About the Company Bellabeat
-    - Products of the company
+## About the Company Bellabeat <a class="anchor"  id="About the Company Bellabeat"></a>
+    ## About the Company Bellabeat. Products of the company <a class="anchor"  id="subsection1"></a>
 * Communicate with Others
     - Business Task
     - Business Objective
