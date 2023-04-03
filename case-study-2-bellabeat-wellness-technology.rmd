@@ -1,12 +1,12 @@
-# Case Study 2 - How Can a Wellness Technology Company Play it Smart
+# TABLE OF CONTENTS
 
-* [About the Company Bellabeat]
-    - [Products of the company]
-* [Communicate with Others]
-    - [Business Task]
-    - [Business Objective]
-    - [Business Deliverables]
-    - [Stakeholders of the Project]
+* About the Company Bellabeat
+    - Products of the company
+* Communicate with Others
+    - Business Task
+    - Business Objective
+    - Business Deliverables
+    - Stakeholders of the Project
 * [Organize and protect data]
     - [Data Source]
     - [CC0: Public Domain]
